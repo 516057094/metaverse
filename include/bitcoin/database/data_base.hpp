@@ -31,6 +31,7 @@
 #include <bitcoin/database/databases/transaction_database.hpp>
 #include <bitcoin/database/databases/history_database.hpp>
 #include <bitcoin/database/databases/stealth_database.hpp>
+#include <bitcoin/database/databases/asset_database.hpp>
 #include <bitcoin/database/define.hpp>
 #include <bitcoin/database/settings.hpp>
 
@@ -151,6 +152,10 @@ public:
     spend_database spends;
     stealth_database stealth;
     transaction_database transactions;
+
+	//asset
+	asset_database	assets;
+	
 };
 
 } // namespace database
