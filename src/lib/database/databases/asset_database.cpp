@@ -91,6 +91,7 @@ namespace libbitcoin {
 		void asset_database::store(size_t height, size_t index,
 			const chain::asset& tx)
 		{
+/*
 			// Write block data.
 			const auto key = tx.hash();
 			const auto tx_size = tx.serialized_size();
@@ -112,6 +113,7 @@ namespace libbitcoin {
 				serial.write_data(tx.to_data());
 			};
 			lookup_map_.store(key, write, value_size);
+*/
 		}
 
 		void asset_database::remove(const hash_digest& hash)

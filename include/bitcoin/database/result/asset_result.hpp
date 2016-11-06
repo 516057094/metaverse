@@ -13,7 +13,10 @@ namespace libbitcoin {
 	///temporany for test....
 	namespace chain
 	{
-		class asset {};
+		class asset {
+		public:
+
+		};
 	}
 
 	namespace database {

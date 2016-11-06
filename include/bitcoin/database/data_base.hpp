@@ -32,6 +32,7 @@
 #include <bitcoin/database/databases/history_database.hpp>
 #include <bitcoin/database/databases/stealth_database.hpp>
 #include <bitcoin/database/databases/asset_database.hpp>
+#include <bitcoin/database/databases/assetowner_database.hpp>
 #include <bitcoin/database/define.hpp>
 #include <bitcoin/database/settings.hpp>
 
@@ -155,7 +156,9 @@ public:
 
 	//asset
 	asset_database	assets;
-	
+	//asset owner
+	assetowner_database assetowner;
+
 };
 
 } // namespace database

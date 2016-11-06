@@ -145,7 +145,7 @@ data_base::data_base(const store& paths, size_t history_height,
     history(paths.history_lookup, paths.history_rows, mutex_),
     stealth(paths.stealth_rows, mutex_),
     spends(paths.spends_lookup, mutex_),
-    transactions(paths.transactions_lookup, mutex_)
+	assets(paths.transactions_lookup, mutex_)
 {
 }
 
