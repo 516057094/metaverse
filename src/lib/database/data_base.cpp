@@ -148,7 +148,7 @@ data_base::data_base(const store& paths, size_t history_height,
 	transactions(paths.transactions_lookup, mutex_),
 	//assetowner_database
 	assets(paths.asset_lookup, mutex_),
-	assetowner(paths.assetowner_lookup, paths.assetowner_rows, mutex_),
+	assetowner(paths.assetowner_lookup, paths.assetowner_rows, mutex_)
 {
 }
 
