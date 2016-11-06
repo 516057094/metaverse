@@ -60,6 +60,11 @@ public:
         path stealth_rows;
         path spends_lookup;
         path transactions_lookup;
+
+		//add by chenxf
+		path asset_lookup;
+		path assetowner_lookup;
+		path assetowner_rows;
     };
 
     /// Create a new database file with a given path prefix and default paths.
