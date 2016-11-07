@@ -37,7 +37,7 @@ chain::asset deserialize_tx(const Iterator first)
 {
     chain::asset tx;
     auto deserial = make_deserializer_unsafe(first);
-    tx.from_data(deserial);
+    //tx.from_data(deserial);
     return tx;
 }
 
