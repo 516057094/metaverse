@@ -33,6 +33,7 @@
 #include <bitcoin/database/databases/stealth_database.hpp>
 #include <bitcoin/database/databases/asset_database.hpp>
 #include <bitcoin/database/databases/assetowner_database.hpp>
+#include <bitcoin/database/databases/account_database.hpp>
 #include <bitcoin/database/define.hpp>
 #include <bitcoin/database/settings.hpp>
 
@@ -65,6 +66,8 @@ public:
 		path asset_lookup;
 		path assetowner_lookup;
 		path assetowner_rows;
+		path account_lookup;
+		path account_rows;
     };
 
     /// Create a new database file with a given path prefix and default paths.
@@ -163,7 +166,9 @@ public:
 	asset_database	assets;
 	//asset owner
 	assetowner_database assetowner;
-
+	//account owned assetes
+	account_database accounts;
+	
 };
 
 } // namespace database
